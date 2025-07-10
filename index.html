@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Mohana Priya | DevOps Engineer</title>
+  <link rel="stylesheet" href="style.css"/>
+</head>
+<body>
+  <header>
+    <h1>Mohana Priya S</h1>
+    <p>DevOps Engineer Intern | AWS Cloud Captain | Cloud Enthusiast</p>
+    <div class="contact-links">
+      <a href="mailto:mohanapriyas1808@gmail.com">Email</a>
+      <a href="https://www.linkedin.com/in/mohana-priya-s-452b6225a" target="_blank">LinkedIn</a>
+      <a href="https://github.com/mohanapriyas1808" target="_blank">GitHub</a>
+    </div>
+  </header>
+
+  <main>
+    <section class="card">
+      <h2>Education</h2>
+      <p><strong>St. Joseph’s Institute of Technology</strong><br>B.Tech - AI & DS | CGPA: 8.98 (2022–2026)</p>
+    </section>
+
+    <section class="card">
+      <h2>Technical Skills</h2>
+      <ul>
+        <li><strong>Languages:</strong> Python (Proficient), Java (Intermediate)</li>
+        <li><strong>Tools & Technologies:</strong> AWS, Docker, Terraform, MySQL, GitHub Actions, Jenkins, Linux, Kubernetes, Shell Scripting</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Experience</h2>
+      <p><strong>DevOps Engineer Intern</strong> @ Bot2do Technologies<br><em>Aug 2024 – Mar 2025</em></p>
+      <ul>
+        <li>Developed Terraform scripts to automate infrastructure.</li>
+        <li>Set up CI/CD pipelines with GitHub Actions (70% efficiency).</li>
+        <li>Containerized apps with Docker (75% scalability).</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Projects</h2>
+      <ul>
+        <li><strong>CI/CD Pipeline with Amazon EKS:</strong> <a href="https://github.com/mohanapriyas1808/CI-CD-EKS" target="_blank">View Project</a></li>
+        <li><strong>Continuous Delivery Pipeline:</strong> <a href="https://github.com/mohanapriyas1808/codepipeline-s3-game" target="_blank">View Project</a></li>
+        <li><strong>Cloud-Based OTP System:</strong> <a href="https://github.com/mohanapriyas1808/Cloud-based-OTP" target="_blank">View Project</a></li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Certifications</h2>
+      <ul>
+        <li>AWS Certified Cloud Practitioner (CLF-C02)</li>
+        <li>AWS Academy Cloud Foundations</li>
+        <li>Networking Basics – Cisco</li>
+        <li>DevOps Workshop – TCS</li>
+      </ul>
+    </section>
+
+    <section class="card">
+      <h2>Achievements</h2>
+      <ul>
+        <li>AWS Cloud Captain (2025 – 2026)</li>
+        <li>2nd Place – PartyRock Competition</li>
+        <li>30 Days Cloud Challenge by AWS Cloud Club</li>
+      </ul>
+    </section>
+  </main>
+
+  <footer>
+    <p id="view-count">Loading views...</p>
+    <p>&copy; 2025 Mohana Priya S | Portfolio</p>
+  </footer>
+
+  <script>
+    fetch("https://fd4ycz4o2g.execute-api.ap-south-1.amazonaws.com/prod") // <-- replace with your real API Gateway endpoint
+      .then(res => res.json())
+      .then(data => {
+        document.getElementById("view-count").innerText = `Viewed ${data.views} times`;
+      })
+      .catch(err => {
+        console.error("Failed to load view count:", err);
+        document.getElementById("view-count").innerText = "View counter unavailable.";
+      });
+  </script>
+</body>
+</html>
