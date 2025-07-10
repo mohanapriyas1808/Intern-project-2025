@@ -41,7 +41,7 @@ This project demonstrates how to host a static website using **Amazon S3** and d
         "Effect": "Allow",
         "Principal": "*",
         "Action": "s3:GetObject",
-        "Resource": "arn:aws:s3:::my-buc-10-07/*"
+        "Resource": "arn:aws:s3:::BUCKET_NAME/*"
       }
     ]
   }
