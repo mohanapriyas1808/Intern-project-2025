@@ -18,7 +18,7 @@ This project demonstrates how to host a static website using **Amazon S3** and d
 
 - `index.html`
 - `style.css`
-- 'script.js'
+- `script.js`
 
 ---
 
